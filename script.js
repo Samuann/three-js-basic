@@ -3,17 +3,17 @@ const scene = new THREE.Scene();
 const canvas = document.querySelector('.webgl');
 
 // Create a geometry of an aquamarine Cube
-const 
-    boxWidth = 1, 
-    boxHeight = 1,
-    boxDepth = 1;
+const boxWidth = 1; 
+const boxHeight = 1;
+const boxDepth = 1;
 
 const cubeGeometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
+
 const material = new THREE.MeshBasicMaterial({
     color: '#a5ffd6'
 });
 
-// Mesh will ontain the material and the geometry
+// Mesh will contain the material and the geometry
 const cubeMesh = new THREE.Mesh(cubeGeometry, material);
 
 // add mesh to the scene
